@@ -1,21 +1,14 @@
 import React from "react";
-import QuoteGenerator from "./QuoteGenerator";
 import ToDo from "./ToDo/ToDo";
+import QuoteGenerator from "./QuoteGenerator/QuoteGenerator";
 
 class Projects extends React.Component {
   render() {
     return (
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      >
-        <div style={{ maxWidth: "500px", padding: "0 12px" }}>
+      <div className="flex flex-col items-center justify-center">
+        <div className="py-0 px-5 w-full max-w-xl">
           <ToDo />
-          <hr style={{ width: "100%" }} />
+          <hr className="h-px my-7 bg-gray-200 border-0 dark:bg-gray-700" />
           <QuoteGenerator />
         </div>
       </div>

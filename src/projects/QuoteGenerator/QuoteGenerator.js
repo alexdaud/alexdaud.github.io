@@ -26,17 +26,21 @@ class QuoteGenerator extends React.Component {
 
   render() {
     return (
-      <div style={{ paddingBottom: "12px" }}>
+      <div className="pb-3">
+        <h1 className="text-3xl font-bold m-5 text-center">Quote Generator</h1>
         {this.state.quote ? (
           <div>
-            <h2 style={{ fontStyle: "italic", padding: "0 12px" }}>
+            <h2 className="italic px-3 break-words text-2xl">
               "{this.state.quote}"
             </h2>
-            <h3 style={{ textAlign: "right" }}>--{this.state.author}</h3>
+            <h3 className="text-right ">--{this.state.author}</h3>
           </div>
         ) : null}
-        <div style={{display: 'flex', justifyContent: 'flex-end'}}>
-          <button onClick={this.fetchRandomQuote}>
+        <div className="flex justify-end">
+          <button
+            onClick={this.fetchRandomQuote}
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded"
+          >
             Get a new Quote!
           </button>
         </div>

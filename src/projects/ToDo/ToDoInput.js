@@ -34,16 +34,24 @@ class ToDoInput extends React.Component {
 
   render() {
     return (
-      <div style={{ display: "flex", width: "100%" }}>
+      <div className="flex">
         <input
           onChange={this.bindNewTask}
           onKeyDown={this._handleKeyDown}
           value={this.state.newTask}
-          style={{ width: "100%" }}
+          className="shadow appearance-none border rounded py-2 px-3
+          text-gray-700 leading-tight focus:outline-none focus:shadow-outline w-full max-w-sm"
         />
-        <button onClick={this.addTask}>Add</button>
+        <button
+          onClick={this.addTask}
+          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded"
+        >
+          Add
+        </button>
         <button
           onClick={this.resetList}
+          className="bg-gray-400 hover:bg-gray-500 text-white font-bold py-2 px-4 border border-gray-500 rounded
+          disabled:opacity-20 disabled:hover:cursor-default  disabled:hover:bg-gray-400"
           disabled={!this.state.newTask && this.props.taskList.length === 0}
         >
           Reset

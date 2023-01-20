@@ -24,15 +24,8 @@ class ToDo extends React.Component {
 
   render() {
     return (
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <h1 style={{ textAlign: "center" }}>To-Do</h1>
+      <div className="flex flex-col justify-center align-middle">
+        <h1 className="text-3xl font-bold m-5 text-center">To-Do</h1>
         <ToDoInput
           onAddTask={this.addTask}
           onReset={this.resetList}

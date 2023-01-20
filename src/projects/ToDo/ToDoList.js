@@ -3,10 +3,10 @@ import React from "react";
 class ToDoList extends React.Component {
   render() {
     return (
-      <div style={{ alignSelf: "start" }}>
-        <ul>
+      <div>
+        <ul className="list-square pl-4">
           {this.props.taskList.map((task, index) => (
-            <li key={index} style={{ wordBreak: "break-word" }}>
+            <li key={index} className="break-words">
               {task}
             </li>
           ))}
