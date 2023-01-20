@@ -26,10 +26,12 @@ class QuoteGenerator extends React.Component {
 
   render() {
     return (
-      <div>
+      <div style={{ paddingBottom: "12px" }}>
         {this.state.quote ? (
           <div>
-            <h2 style={{ fontStyle: "italic" }}>"{this.state.quote}"</h2>
+            <h2 style={{ fontStyle: "italic", padding: "0 12px" }}>
+              "{this.state.quote}"
+            </h2>
             <h3 style={{ textAlign: "right" }}>--{this.state.author}</h3>
           </div>
         ) : null}

@@ -53,7 +53,7 @@ class ToDoList extends React.Component {
             onChange={this.bindNewTask}
             onKeyDown={this._handleKeyDown}
             value={this.state.newTask}
-            style={{ minWidth: "220px" }}
+            style={{ minWidth: "160px" }}
           />
           <button onClick={this.addTask}>Add</button>
           <button
@@ -63,7 +63,7 @@ class ToDoList extends React.Component {
             Reset
           </button>
         </div>
-        <div style={{ alignSelf: "start", paddingLeft: "66px" }}>
+        <div style={{ alignSelf: "start" }}>
           <ul>
             {this.state.taskList.map((task, index) => (
               <li key={index}>{task}</li>

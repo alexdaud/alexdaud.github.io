@@ -13,7 +13,7 @@ class Projects extends React.Component {
           justifyContent: "center",
         }}
       >
-        <div style={{ maxWidth: "500px" }}>
+        <div style={{ maxWidth: "500px", padding: "0 12px" }}>
           <ToDoList />
           <hr style={{ width: "100%" }} />
           <QuoteGenerator />
