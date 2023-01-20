@@ -35,9 +35,11 @@ class QuoteGenerator extends React.Component {
             <h3 style={{ textAlign: "right" }}>--{this.state.author}</h3>
           </div>
         ) : null}
-        <button style={{ float: "right" }} onClick={this.fetchRandomQuote}>
-          Get a new Quote!
-        </button>
+        <div style={{display: 'flex', justifyContent: 'flex-end'}}>
+          <button onClick={this.fetchRandomQuote}>
+            Get a new Quote!
+          </button>
+        </div>
       </div>
     );
   }

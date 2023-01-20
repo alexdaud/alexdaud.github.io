@@ -1,6 +1,6 @@
 import React from "react";
-import ToDoList from "./ToDoList";
 import QuoteGenerator from "./QuoteGenerator";
+import ToDo from "./ToDo/ToDo";
 
 class Projects extends React.Component {
   render() {
@@ -14,7 +14,7 @@ class Projects extends React.Component {
         }}
       >
         <div style={{ maxWidth: "500px", padding: "0 12px" }}>
-          <ToDoList />
+          <ToDo />
           <hr style={{ width: "100%" }} />
           <QuoteGenerator />
         </div>
