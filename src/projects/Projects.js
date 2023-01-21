@@ -8,7 +8,7 @@ class Projects extends React.Component {
       <div className="flex flex-col items-center justify-center">
         <div className="py-0 px-5 w-full max-w-xl">
           <ToDo />
-          <hr className="h-px my-7 bg-gray-200 border-0 dark:bg-gray-700" />
+          <hr className="h-px my-7 bg-slate-700 border-0 dark:bg-slate-400" />
           <QuoteGenerator />
         </div>
       </div>

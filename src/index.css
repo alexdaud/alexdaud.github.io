@@ -11,7 +11,8 @@ html {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #e8e4c9;
+  background-color: theme("colors.slate.50");
+  color: theme("colors.slate.800");
 }
 
 code {
@@ -19,7 +20,6 @@ code {
     monospace;
 }
 input,
-button,
 input[type="text"],
 input[type="number"],
 textarea {

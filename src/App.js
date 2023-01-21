@@ -5,7 +5,7 @@ import Projects from "./projects/Projects";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <header className="App-header bg-slate-700">
         <img src={logo} className="App-logo" alt="logo" />
         <a
           className="App-link underline"

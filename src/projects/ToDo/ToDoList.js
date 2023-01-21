@@ -3,15 +3,17 @@ import React from "react";
 class ToDoList extends React.Component {
   render() {
     return (
-      <div>
-        <ul className="list-square pl-4">
-          {this.props.taskList.map((task, index) => (
-            <li key={index} className="break-words">
-              {task}
-            </li>
-          ))}
-        </ul>
-      </div>
+      !!this.props.taskList.length && (
+        <div className="pt-2">
+          <ul className="list-square pl-5">
+            {this.props.taskList.map((task, index) => (
+              <li key={index} className="break-words">
+                {task}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )
     );
   }
 }
