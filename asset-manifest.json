@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/react-playground/static/css/main.afb90c5d.css",
-    "main.js": "/react-playground/static/js/main.76f463f4.js",
+    "main.css": "/react-playground/static/css/main.1bba59e3.css",
+    "main.js": "/react-playground/static/js/main.d868eb1e.js",
     "static/js/787.61729267.chunk.js": "/react-playground/static/js/787.61729267.chunk.js",
     "static/media/logo.svg": "/react-playground/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/react-playground/index.html",
-    "main.afb90c5d.css.map": "/react-playground/static/css/main.afb90c5d.css.map",
-    "main.76f463f4.js.map": "/react-playground/static/js/main.76f463f4.js.map",
+    "main.1bba59e3.css.map": "/react-playground/static/css/main.1bba59e3.css.map",
+    "main.d868eb1e.js.map": "/react-playground/static/js/main.d868eb1e.js.map",
     "787.61729267.chunk.js.map": "/react-playground/static/js/787.61729267.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.afb90c5d.css",
-    "static/js/main.76f463f4.js"
+    "static/css/main.1bba59e3.css",
+    "static/js/main.d868eb1e.js"
   ]
 }
