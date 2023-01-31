@@ -1,20 +1,33 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ToDo from "./ToDo/ToDo";
 import QuoteGenerator from "./QuoteGenerator/QuoteGenerator";
-import { useNavigate, useParams } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import "./Projects.css";
 
 export const QUOTE_GENERATOR = "quote-generator";
 export const TO_DO = "to-do";
 
+// A custom hook that builds on useLocation to parse
+// the query string for you.
+function useQuery() {
+  const { search } = useLocation();
+
+  return React.useMemo(() => new URLSearchParams(search), [search]);
+}
+
 function Projects() {
   const navigate = useNavigate();
-
-  const { project } = useParams();
+  const project = useQuery().get("project");
 
   const handleTabClick = (project) => {
-    navigate(`/${project}`);
+    navigate(`?project=${project}`);
   };
+
+  useEffect(() => {
+    if (!project) {
+      navigate(`?project=${QUOTE_GENERATOR}`);
+    }
+  });
 
   return (
     <div className="flex flex-col items-center justify-center">
